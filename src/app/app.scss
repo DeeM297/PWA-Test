@@ -1,0 +1,37 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+//How to make this only work for browsers?
+
+ion-app, ion-nav, ion-tab, ion-tabs, .app-root {
+
+    right: 0;  //.app-root by default is set to position:absolute; top:0; left:0;
+    margin: 0 auto;  //in order to center the content
+
+    //Colour gradients for sides
+    //fallback for old browsers
+    background: #4688FC;
+    //Chrome 10-25, Safari 5.1-6
+    background: -webkit-linear-gradient(#4688FC, #C7DAFF);
+    //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari
+    background: linear-gradient(#4688FC, #C7DAFF);
+}
+
+//This class will only be used for desktops browsers
+.ionic-container {
+    max-width: 600px;
+}
